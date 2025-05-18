@@ -1,0 +1,30 @@
+# Core Libraries
+numpy
+pandas
+matplotlib
+scikit-learn
+seaborn
+opencv-python
+
+# Deep Learning
+tensorflow>=2.9.0           # If using EfficientNet, ResNet, etc.
+torch>=2.0.0                # For Swin Transformer
+torchvision>=0.15.0
+
+# HuggingFace Transformers & ViT
+transformers>=4.35.0
+timm                         # PyTorch Image Models (for Swin, ViT)
+
+# Explainability
+grad-cam                     # For visual explanation of models
+captum                       # Optional: more XAI tools for PyTorch
+
+# Streamlit UI
+streamlit
+streamlit-option-menu        # For sidebar menu (if used)
+Pillow                       # Image display support
+
+# Others
+jupyterlab                   # For notebooks
+scipy
+joblib
