@@ -1,0 +1,9 @@
+{
+  "mel": "Melanoma is serious. Immediate dermatologist consultation required.",
+  "nv": "Melanocytic nevi are mostly benign moles. Regular monitoring is recommended.",
+  "bkl": "Benign keratosis-like lesions. Usually harmless.",
+  "bcc": "Basal cell carcinoma. Requires surgical removal or cryotherapy.",
+  "akiec": "Actinic keratoses. Use topical creams or minor procedures.",
+  "df": "Dermatofibroma. Typically benign and requires no treatment.",
+  "vasc": "Vascular lesions. Consult for laser therapy if problematic."
+}
