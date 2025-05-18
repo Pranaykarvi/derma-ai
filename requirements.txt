@@ -1,9 +1,9 @@
-streamlit
-torch
-torchvision
-Pillow
-numpy
-matplotlib
-timm
-captum
+streamlit==1.33.0
+torch==2.2.2
+torchvision==0.17.2
+timm==0.9.16
+captum==0.7.0
+numpy==1.26.4
 opencv-python-headless==4.9.0.80
+Pillow==10.3.0
+matplotlib==3.8.4
