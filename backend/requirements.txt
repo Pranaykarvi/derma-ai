@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pillow
+torch
+torchvision
+timm
+numpy
+grad-cam
