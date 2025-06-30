@@ -30,7 +30,7 @@ class ViTEffNetFusion(nn.Module):
         return self.fc(x)
 
 # Load the model
-def load_model(model_path: str = r"D:\target\full_stack\derma_backend\model\model_fold1.pth", num_classes: int = 7):
+def load_model(model_path: str = "backend/model/model_fold1.pth", num_classes: int = 7):
 
     model = ViTEffNetFusion(num_classes=num_classes)
 
