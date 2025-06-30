@@ -16,7 +16,7 @@ st.set_page_config(page_title="Derma-AI", layout="wide")
 @st.cache_resource
 def load_model():
     model = swin_tiny_patch4_window7_224(pretrained=False, num_classes=7)
-    model.load_state_dict(torch.load(r"D:\target\ml\derma-ai\notebooks\vit_normal\best_swin_model.pth", map_location='cpu'))
+    model.load_state_dict(torch.load(r"notebooks/vit_normal/best_swin_model.pth", map_location='cpu'))
     model.eval()
     return model
 
