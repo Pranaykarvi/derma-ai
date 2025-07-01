@@ -1,8 +1,8 @@
 fastapi
 uvicorn
 pillow
-torch==2.2.2+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
-torchvision==0.17.2+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
+torch==2.2.2+cpu --find-links https://download.pytorch.org/whl/cpu
+torchvision==0.17.2+cpu --find-links https://download.pytorch.org/whl/cpu
 timm==1.0.16
 numpy
 grad-cam==1.5.5
