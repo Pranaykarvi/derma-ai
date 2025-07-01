@@ -37,10 +37,10 @@ export default function AboutPage() {
       role: "Machine Learning Engineer",
       bio: "Passionate about medical AI, full-stack development, and deploying scalable ML solutions. Also pursuing Data Science at Vellore Institute of Technology.",
       imageUrl: "/placeholder.svg?height=200&width=200",
-      linkedinUrl: "#",
-      githubUrl: "#",
-      email: "co.creator@vitstudent.ac.in",
-      kaggleUrl: "#",
+      linkedinUrl: "https://www.linkedin.com/in/samriddhi-ganguly-2b173929a/",
+      githubUrl: "https://github.com/sammmmmyyyy",
+      email: "samriddhi.ganguly05@gmail.com",
+      kaggleUrl: "https://kaggle.com/sammganguly05",
     },
   ]
 
