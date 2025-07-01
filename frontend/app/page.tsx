@@ -70,11 +70,13 @@ export default function HomePage() {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [prediction, setPrediction] = useState<PredictionResult | null>(null)
+  const [error, setError] = useState<string | null>(null)
 
   const handleFileSelect = useCallback((file: File) => {
     setSelectedFile(file)
     setPreviewUrl(URL.createObjectURL(file))
     setPrediction(null)
+    setError(null)
   }, [])
 
   const handleDrop = useCallback(
@@ -100,21 +102,29 @@ export default function HomePage() {
   const handlePredict = async () => {
     if (!selectedFile) return
     setIsLoading(true)
+    setPrediction(null)
+    setError(null)
 
     try {
       const formData = new FormData()
       formData.append("file", selectedFile)
 
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/predict`, {
-          method: "POST",
-          body: formData,
-       })
+      const response = await fetch("https://pranaykarvi-derma-ai.hf.space/predict", {
+        method: "POST",
+        body: formData,
+      })
 
+      if (!response.ok) {
+        const errorText = await response.text()
+        throw new Error(`Server responded with ${response.status}: ${errorText}`)
+      }
 
       const result = await response.json()
+      if (!result.prediction) throw new Error("No prediction found in server response.")
       setPrediction(result.prediction)
-    } catch (err) {
+    } catch (err: any) {
       console.error("Prediction failed:", err)
+      setError(err.message || "Prediction failed. Please try again.")
     } finally {
       setIsLoading(false)
     }
@@ -200,6 +210,10 @@ export default function HomePage() {
               <div className="py-12 text-center text-muted-foreground">
                 <Loader2 className="h-8 w-8 animate-spin mx-auto mb-2 text-blue-500" />
                 Processing your image...
+              </div>
+            ) : error ? (
+              <div className="py-12 text-center text-red-500 font-semibold">
+                ❌ {error}
               </div>
             ) : disease ? (
               <div className="space-y-6">
