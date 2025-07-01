@@ -16,20 +16,20 @@ interface TeamMember {
 export default function Footer() {
   const teamMembers: TeamMember[] = [
     {
-      name: "Pranay Karvi",
-      role: "AI Researcher & Developer",
+      name: "Pranay Kumar Karvi",
+      role: "PreFinal Year at VIT Chennai",
       github: "https://github.com/pranaykarvi",
       linkedin: "https://linkedin.com/in/pranaykarvi",
       kaggle: "https://kaggle.com/pranaykarvi",
       email: "pranaykarvi@gmail.com",
     },
     {
-      name: "Contributor 2",
-      role: "ML Engineer",
-      github: "https://github.com/contributor2",
-      linkedin: "https://linkedin.com/in/contributor2",
-      kaggle: "https://kaggle.com/contributor2",
-      email: "contributor2@vitstudent.ac.in",
+      name: "Samriddhi Ganguly",
+      role: "PreFinal Year at VIT Chennai",
+      github: "https://github.com/sammmmmyyyy",
+      linkedin: "https://www.linkedin.com/in/samriddhi-ganguly-2b173929a/",
+      kaggle: "https://kaggle.com/sammganguly05",
+      email: "samriddhi.ganguly05@gmail.com",
     },
   ]
 
