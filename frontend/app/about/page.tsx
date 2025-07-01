@@ -23,7 +23,7 @@ export default function AboutPage() {
     {
       id: 1,
       name: "Pranay Kumar Karvi",
-      role: "AI Research Lead",
+      role: "PreFinal Year at VIT Chennai",
       bio: "Focused on building explainable AI systems for healthcare using cutting-edge deep learning and radiomics. Final-year Data Science student at VIT.",
       imageUrl: "/placeholder.svg?height=200&width=200",
       linkedinUrl: "https://linkedin.com/in/pranaykarvi",
@@ -33,8 +33,8 @@ export default function AboutPage() {
     },
     {
       id: 2,
-      name: "Co-Creator",
-      role: "Machine Learning Engineer",
+      name: "Samriddhi Ganguly",
+      role: "PreFinal Year at VIT Chennai",
       bio: "Passionate about medical AI, full-stack development, and deploying scalable ML solutions. Also pursuing Data Science at Vellore Institute of Technology.",
       imageUrl: "/placeholder.svg?height=200&width=200",
       linkedinUrl: "https://www.linkedin.com/in/samriddhi-ganguly-2b173929a/",
