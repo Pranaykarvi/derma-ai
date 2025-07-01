@@ -1,16 +1,11 @@
---extra-index-url https://download.pytorch.org/whl/cpu
-
 fastapi
 uvicorn
-pillow
 torch==2.2.2+cpu
 torchvision==0.17.2+cpu
-timm==1.0.16
-grad-cam==1.5.5
-numpy==1.26.4
+grad-cam
+pillow
 scikit-learn
+timm
+numpy
 matplotlib
-opencv-python
-pyyaml
 jinja2
-requests
