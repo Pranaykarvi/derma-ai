@@ -36,7 +36,7 @@ export default function AboutPage() {
       name: "Samriddhi Ganguly",
       role: "PreFinal Year at VIT Chennai",
       bio: "Passionate about medical AI, full-stack development, and deploying scalable ML solutions. Also pursuing Data Science at Vellore Institute of Technology.",
-      imageUrl: "/placeholder.svg?height=200&width=200",
+      imageUrl: "frontend/public/WhatsApp%20Image%202025-07-02%20at%2018.18.53_19d6d59a.jpg",
       linkedinUrl: "https://www.linkedin.com/in/samriddhi-ganguly-2b173929a/",
       githubUrl: "https://github.com/sammmmmyyyy",
       email: "samriddhi.ganguly05@gmail.com",
