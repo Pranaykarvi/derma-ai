@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, User, Globe } from "lucide-react"
+import { Github, Linkedin, Mail, User } from "lucide-react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faKaggle } from "@fortawesome/free-brands-svg-icons"
 
@@ -11,7 +11,7 @@ interface TeamMember {
   name: string
   role: string
   bio: string
-  imageUrl: string
+  imageUrl?: string
   linkedinUrl?: string
   githubUrl?: string
   email?: string
@@ -49,7 +49,7 @@ export default function AboutPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-foreground mb-4">About Our Team</h1>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          We are a dedicated team of final-year students at Vellore Institute of Technology, specializing in Data
+          We are a dedicated team of Prefinal-year students at Vellore Institute of Technology, specializing in Data
           Science. Our mission is to revolutionize skin lesion diagnosis with explainable, reliable, and accessible
           AI.
         </p>
@@ -60,15 +60,18 @@ export default function AboutPage() {
           <Card key={member.id} className="overflow-hidden hover:shadow-lg transition-shadow">
             <CardContent className="p-6">
               <div className="flex flex-col items-center text-center">
-                <div className="relative mb-4">
-                  <img
-                    src={member.imageUrl || "/placeholder.svg"}
-                    alt={member.name}
-                    className="w-32 h-32 rounded-full object-cover border-4 border-primary/20"
-                  />
-                  <div className="absolute inset-0 w-32 h-32 rounded-full bg-primary/10 flex items-center justify-center">
-                    <User className="h-16 w-16 text-primary/60" />
-                  </div>
+                <div className="mb-4">
+                  {member.imageUrl ? (
+                    <img
+                      src={member.imageUrl}
+                      alt={member.name}
+                      className="w-32 h-32 rounded-full object-cover border-4 border-primary/20"
+                    />
+                  ) : (
+                    <div className="w-32 h-32 rounded-full bg-primary/10 flex items-center justify-center border-4 border-primary/20">
+                      <User className="h-16 w-16 text-primary/60" />
+                    </div>
+                  )}
                 </div>
 
                 <h3 className="text-xl font-bold text-foreground mb-1">{member.name}</h3>
@@ -148,4 +151,3 @@ export default function AboutPage() {
     </div>
   )
 }
-
