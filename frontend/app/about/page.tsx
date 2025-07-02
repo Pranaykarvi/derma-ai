@@ -25,7 +25,7 @@ export default function AboutPage() {
       name: "Pranay Kumar Karvi",
       role: "PreFinal Year at VIT Chennai",
       bio: "Focused on building explainable AI systems for healthcare using cutting-edge deep learning and radiomics. Final-year Data Science student at VIT.",
-      imageUrl: "/placeholder.svg?height=200&width=200",
+      imageUrl: "frontend/public/WhatsApp%20Image%202025-06-10%20at%2021.09.48_8f10f4dc.jpg",
       linkedinUrl: "https://linkedin.com/in/pranaykarvi",
       githubUrl: "https://github.com/pranaykarvi",
       email: "pranaykumar.karvi2023@vitstudent.ac.in",
