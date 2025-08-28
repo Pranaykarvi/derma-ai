@@ -26,7 +26,7 @@ export default function Footer() {
     {
       name: "Samriddhi Ganguly",
       role: "PreFinal Year at VIT Chennai",
-      github: "https://github.com/sammmmmyyyy",
+      github: "https://github.com/SamriddhiGanguly05",
       linkedin: "https://www.linkedin.com/in/samriddhi-ganguly-2b173929a/",
       kaggle: "https://kaggle.com/sammganguly05",
       email: "samriddhi.ganguly05@gmail.com",
