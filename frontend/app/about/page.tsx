@@ -38,7 +38,7 @@ export default function AboutPage() {
       bio: "Passionate about medical AI, full-stack development, and deploying scalable ML solutions. Also pursuing Data Science at Vellore Institute of Technology.",
       imageUrl: "/image1.jpg?height=200&width=200",
       linkedinUrl: "https://www.linkedin.com/in/samriddhi-ganguly-2b173929a/",
-      githubUrl: "https://github.com/sammmmmyyyy",
+      githubUrl: "https://github.com/SamriddhiGanguly05",
       email: "samriddhi.ganguly05@gmail.com",
       kaggleUrl: "https://kaggle.com/sammganguly05",
     },
